@@ -13,6 +13,10 @@
 Make some environment variables available only at build time, in the **runtime of your application**.
 By default, the variables you enter in your *netlify.toml* file are only accessible at build time.
 
+[![](https://www.netlify.com/img/deploy/button.svg)](
+https://app.netlify.com/start/deploy?repository=https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime
+)
+
 &nbsp;
 ## What this plugin does
 
@@ -35,7 +39,11 @@ This is where the ***netlify-plugin-use-env-in-runtime*** comes in!
 
 &nbsp;
 ## Usage
-#### File-based installation
+#### UI Installation
+If your project was already deployed to Netlify, use the Netlify UI to [install the Use Env In Runtime Plugin](https://app.netlify.com/plugins/{use-env-in-runtime}/install) in a few clicks.
+
+&nbsp;
+#### File-based Installation
 To install with file-based installation, add the following lines to your `netlify.toml` file:
 ```toml
 [[plugins]]  
