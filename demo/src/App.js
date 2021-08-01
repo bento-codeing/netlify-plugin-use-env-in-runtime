@@ -39,8 +39,8 @@ function App() {
         <code>Check your web console for more information.</code>
         <br/>
         <code style={{fontSize: "1rem"}}>
-          Check the deploy branch version: <a className="App-link"
-                                                 href="https://demo-check-deploy-branch--use-env-in-runtime-plugin-demo.netlify.app"
+          Check the production version: <a className="App-link"
+                                                 href="https://use-env-in-runtime-plugin-demo.netlify.app"
                                                  target="_blank"
                                                  rel="noopener noreferrer">click on me!</a> 👺
         </code>

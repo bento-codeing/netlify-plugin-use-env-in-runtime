@@ -12,7 +12,7 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "netlify-plugin-use-env-in-runtime": "^1.0.0"
+    "netlify-plugin-use-env-in-runtime": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
