@@ -1,6 +1,6 @@
 [build]
 publish = "demo/build"
-command = "cd demo && yarn run build"
+command = "yarn run build"
 
 [build.environment]
 TOML_ALL_TEST = "Hello all!"
