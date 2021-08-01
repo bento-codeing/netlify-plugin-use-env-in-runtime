@@ -4,12 +4,14 @@ Make some environment variables available only at build time, in the **runtime o
 
 By default, the variables you enter in your *netlify.toml* file are only accessible at build time.
 
+&nbsp;
 ## What this plugin does
 
 This plugin allows you to transfer environment variables in the runtime of your application from those declared in your *netlify.toml* file and which are only executed at build time.
 
 You can even **override variables** defined in the Netlify UI!
 
+&nbsp;
 ## Use case
 
 You are a developer who does not have access to your company's Netlify deployment settings console. But your company allows any branch to be deployed on Netlify.
@@ -22,8 +24,10 @@ Let's remind it again, the environment variables defined in the Netlify.toml fil
 
 This is where the ***netlify-plugin-use-env-in-runtime*** comes in!
 
+&nbsp;
 ## Usage
 
+&nbsp;
 #### File-based installation
 To install with file-based installation, add the following lines to your `netlify.toml` file:
 ```toml
