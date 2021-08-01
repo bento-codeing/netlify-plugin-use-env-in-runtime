@@ -1,0 +1,18 @@
+[build]
+publish = "demo/build"
+command = "cd demo && npm run build"
+
+[build.environment]
+TOML_ALL_TEST = "Hello all!"
+
+[context.production.environment]
+TOML_PROD_TEST = "Hello prod!"
+
+[context.branch-deploy.environment]
+TOML_BRANCH_TEST = "Hello deploy!"
+
+[[plugins]]
+package = "netlify-plugin-use-env-in-runtime"
+    [plugins.inputs]
+    prefix = "REACT_APP"
+    def = ["TOML_ALL_TEST", "TOML_PROD_TEST", "TOML_BRANCH_TEST"]
