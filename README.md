@@ -44,6 +44,7 @@ This is where the ***netlify-plugin-use-env-in-runtime*** comes in!
 ## Usage
 #### UI Installation
 If your project was already deployed to Netlify, use the Netlify UI to [install the Use Env In Runtime Plugin](https://app.netlify.com/plugins/{use-env-in-runtime}/install) in a few clicks.
+You're able to [remove the plugin](https://docs.netlify.com/configure-builds/build-plugins/#remove-a-plugin) at any time by visiting the [Plugins tab](https://app.netlify.com/plugins) for your site in the Netlify UI.
 
 &nbsp;
 #### File-based Installation
