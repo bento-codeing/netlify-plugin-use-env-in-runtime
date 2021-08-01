@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/compare/v1.0.0...v1.1.0) (2021-08-01)
+
+
+### Features
+
+* **plugin:** avoids common pitfalls ([bfd305a](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/commit/bfd305ab6ff1cf6e27357de6bab83408e1d2005e))
+
 ## [1.0.0](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/compare/v0.1.0...v1.0.0) (2021-08-01)
 
 ## 0.1.0 (2021-08-01)
