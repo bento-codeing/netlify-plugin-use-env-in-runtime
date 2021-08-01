@@ -1,7 +1,6 @@
 # Use Environment variables In Runtime *from the netlify.toml file*
 
 Make some environment variables available only at build time, in the **runtime of your application**.
-
 By default, the variables you enter in your *netlify.toml* file are only accessible at build time.
 
 &nbsp;
@@ -26,8 +25,6 @@ This is where the ***netlify-plugin-use-env-in-runtime*** comes in!
 
 &nbsp;
 ## Usage
-
-&nbsp;
 #### File-based installation
 To install with file-based installation, add the following lines to your `netlify.toml` file:
 ```toml
