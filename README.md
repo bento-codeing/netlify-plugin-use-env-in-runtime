@@ -4,7 +4,6 @@
 ![](https://img.shields.io/badge/tests-100%25-success)
 ![](https://img.shields.io/npm/dw/netlify-plugin-use-env-in-runtime)
 ![](https://img.shields.io/github/issues/arkhn3b/netlify-plugin-use-env-in-runtime)
-![](https://img.shields.io/github/repo-size/arkhn3b/netlify-plugin-use-env-in-runtime)
 ![](https://img.shields.io/github/license/arkhn3b/netlify-plugin-use-env-in-runtime)
 ![](https://img.shields.io/github/stars/arkhn3b/netlify-plugin-use-env-in-runtime?style=social)
 
