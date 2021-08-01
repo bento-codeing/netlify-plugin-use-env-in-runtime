@@ -1,4 +1,13 @@
-# Use Environment variables In Runtime *from the netlify.toml file*
+![](https://img.shields.io/badge/build-success-success)
+![](https://img.shields.io/badge/tests-100%25-success)
+![](https://img.shields.io/npm/dw/netlify-plugin-use-env-in-runtime)
+![](https://img.shields.io/github/issues/arkhn3b/netlify-plugin-use-env-in-runtime)
+![](https://img.shields.io/github/repo-size/arkhn3b/netlify-plugin-use-env-in-runtime)
+![](https://img.shields.io/github/license/arkhn3b/netlify-plugin-use-env-in-runtime)
+![](https://img.shields.io/github/stars/arkhn3b/netlify-plugin-use-env-in-runtime?style=social)
+
+# Use Environment variables In Runtime
+
 
 Make some environment variables available only at build time, in the **runtime of your application**.
 By default, the variables you enter in your *netlify.toml* file are only accessible at build time.
@@ -64,3 +73,20 @@ package = "netlify-plugin-use-env-in-runtime"
 &nbsp;
 #### Execution in Netlify
 Once installed and configured, the plugin will automatically run in the Netlify CI during its specified Netlify Build lifecycle event.
+
+&nbsp;
+## Changelog
+###### A detailed changelog, intended for programmers
+- **1.0.0** - First deploy
+
+## License
+[GNU General Public License v3.0](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/blob/main/LICENSE)
+
+## Credits
+[@ARKHN3B](https://github.com/ARKHN3B) (Ben Lmsc)
+
+## Known bugs
+No bugs found for the moment. Please do not hesitate to report the issue here : [issues](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues)
+
+## Contributing
+Become the first contributor ! 
