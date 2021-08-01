@@ -3,6 +3,15 @@
   "version": "1.0.0",
   "description": "Allows you to use env. vars of the Netlify TOML file in your code",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "manifest.yml",
+    "LICENSE",
+    "package.json",
+    "package-lock.json",
+    "CHANGELOG.md",
+    "README.md"
+  ],
   "scripts": {
     "test": "jest",
     "release": "standard-version",
@@ -13,7 +22,7 @@
     "url": "git+https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime.git"
   },
   "engines": {
-    "node": ">=6.17.1"
+    "node": ">=8.3.0"
   },
   "keywords": [
     "netlify",
