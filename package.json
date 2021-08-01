@@ -1,0 +1,38 @@
+{
+  "name": "netlify-plugin-uefn",
+  "version": "0.1.0",
+  "description": "Allows you to use env. vars of the Netlify TOML file in your code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARKHN3B/netlify-plugin-uefn.git"
+  },
+  "keywords": [
+    "netlify",
+    "netlify-plugin",
+    "plugins",
+    "plugin",
+    "env",
+    "var",
+    "vars"
+  ],
+  "author": "Ben Lmsc",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ARKHN3B/netlify-plugin-uefn/issues"
+  },
+  "homepage": "https://github.com/ARKHN3B/netlify-plugin-uefn#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.3.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
