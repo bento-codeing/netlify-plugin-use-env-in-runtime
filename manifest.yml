@@ -1,0 +1,8 @@
+# manifest.yml
+
+name: netlify-plugin-uefn
+inputs:
+  - name: prefix
+    description: "Some environments require a prefix before their variables to work. E.g. REACT_APP_ for CRA, GATSBY_ for Gatsby, etc."
+  - name: def
+    description: "A list defining the variables to be used."
