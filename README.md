@@ -70,7 +70,7 @@ The plugin requires two inputs to work.
 | `prefix` | string | The prefix we want to add to our environment variables. For example, `REACT_APP` if we use CRA or `GATSBY` if we use Gatsby. | - |
 | `def` | string[] \| string | The names of the variables you want to use. Accept two naming schemes:  **1.** use a string array: `["VAR_1", "VAR_2"]` **2.** use a string with a comma or semicolon to separate the names: `"VAR_1; VAR_2; VAR_3"` or `"VAR_1, VAR_2, VAR_3"`  | - |
 
-##### *Example:*
+##### Example:
 ```toml
 [[plugins]]  
 package = "netlify-plugin-use-env-in-runtime"  
