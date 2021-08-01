@@ -21,6 +21,10 @@ https://app.netlify.com/start/deploy?repository=https://github.com/ARKHN3B/netli
 )
 
 &nbsp;
+## Demo
+Try the demo: [https://use-env-in-runtime-plugin-demo.netlify.app/](https://use-env-in-runtime-plugin-demo.netlify.app/)
+
+&nbsp;
 ## What this plugin does
 
 This plugin allows you to transfer environment variables in the runtime of your application from those declared in your *netlify.toml* file and which are only executed at build time.
@@ -91,6 +95,7 @@ Once installed and configured, the plugin will automatically run in the Netlify 
 &nbsp;
 ## Changelog
 ###### A detailed changelog, intended for programmers
+- **1.1.0** - Add logs
 - **1.0.0** - First deploy
 
 ## License
