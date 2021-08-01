@@ -18,7 +18,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo"/>
         <h1>
-          Netlify plugin
+          Use Env in Runtime Netlify plugin
         </h1>
         <p>
           Make some environment variables available only at build time, in the runtime of your application <br/>
