@@ -11,7 +11,6 @@
 ![](https://img.shields.io/github/stars/arkhn3b/netlify-plugin-use-env-in-runtime?style=social)
 
 &nbsp;
-&nbsp;
 # Use environment variables in the application runtime
 
 Make some environment variables available only at build time, in the **runtime of your application**.
