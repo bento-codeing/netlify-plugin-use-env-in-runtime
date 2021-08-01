@@ -29,7 +29,7 @@ function App() {
           <li>Environment variable (named <i>REACT_APP_UI_TEST</i>) set in Netlify UI: <b>{process.env.REACT_APP_UI_TEST}</b></li>
           <li>Environment variable (named <i>REACT_APP_TOML_ALL_TEST</i>) set in Netlify TOML: <b>{process.env.REACT_APP_TOML_ALL_TEST}</b></li>
           <li>Environment variable (named <i>REACT_APP_TOML_PROD_TEST</i>) set for production in Netlify TOML: <b>{process.env.REACT_APP_TOML_PROD_TEST}</b></li>
-          <li>Environment variable (named <i>REACT_APP_TOML_BRANCH_TEST</i>) set for a branch (check-deploy-branch) in Netlify TOML: <b>{process.env.REACT_APP_TOML_BRANCH_TEST}</b></li>
+          <li>Environment variable (named <i>REACT_APP_TOML_BRANCH_TEST</i>) set for a branch (demo-check-deploy-branch) in Netlify TOML: <b>{process.env.REACT_APP_TOML_BRANCH_TEST}</b></li>
         </ol>
         <br/>
         <code>Check your web console for more information.</code>
