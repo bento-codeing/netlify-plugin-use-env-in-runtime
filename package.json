@@ -1,15 +1,18 @@
 {
-  "name": "netlify-plugin-uefn",
+  "name": "netlify-plugin-use-env-in-runtime",
   "version": "0.1.0",
   "description": "Allows you to use env. vars of the Netlify TOML file in your code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "release": "standard-version"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ARKHN3B/netlify-plugin-uefn.git"
+    "url": "git+https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime.git"
+  },
+  "engines": {
+    "node": ">=6.17.1"
   },
   "keywords": [
     "netlify",
@@ -23,11 +26,12 @@
   "author": "Ben Lmsc",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/ARKHN3B/netlify-plugin-uefn/issues"
+    "url": "https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues"
   },
-  "homepage": "https://github.com/ARKHN3B/netlify-plugin-uefn#readme",
+  "homepage": "https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
+    "jest": "^27.0.6",
     "standard-version": "^9.3.1"
   },
   "config": {
