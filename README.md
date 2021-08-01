@@ -1,14 +1,13 @@
 ![](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/blob/main/assets/img/promotional-banner.png)
 
-![](https://img.shields.io/badge/build-success-success)
-![](https://img.shields.io/badge/tests-100%25-success)
-![](https://img.shields.io/npm/dw/netlify-plugin-use-env-in-runtime)
-![](https://img.shields.io/github/issues/arkhn3b/netlify-plugin-use-env-in-runtime)
-![](https://img.shields.io/github/license/arkhn3b/netlify-plugin-use-env-in-runtime)
-![](https://img.shields.io/github/stars/arkhn3b/netlify-plugin-use-env-in-runtime?style=social)
-
 # Use environment variables in the application runtime
-
+![](https://img.shields.io/badge/build-success-success) &nbsp;
+![](https://img.shields.io/badge/tests-100%25-success) &nbsp;
+![](https://img.shields.io/npm/dw/netlify-plugin-use-env-in-runtime) &nbsp;
+![](https://img.shields.io/github/issues/arkhn3b/netlify-plugin-use-env-in-runtime) &nbsp;
+![](https://img.shields.io/github/license/arkhn3b/netlify-plugin-use-env-in-runtime) &nbsp;
+![](https://img.shields.io/github/stars/arkhn3b/netlify-plugin-use-env-in-runtime?style=social)
+&nbsp;
 
 Make some environment variables available only at build time, in the **runtime of your application**.
 By default, the variables you enter in your *netlify.toml* file are only accessible at build time.
