@@ -127,6 +127,7 @@ Once installed and configured, the plugin will automatically run in the Netlify 
 &nbsp;
 ## Changelog
 ###### A detailed changelog, intended for programmers
+- **1.2.1** - Remove yarn file
 - **1.2.0** - Add default inputs and add the possibility to configure the plugin through the ui
 - **1.1.0** - Add logs
 - **1.0.0** - First deploy
