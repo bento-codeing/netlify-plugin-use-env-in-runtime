@@ -40,7 +40,7 @@ test("normal configuration", () => {
   ));
 });
 
-test("fails to use env with def no argument, should throw error", () => {
+test("fails to use env with def no argument, should do nothing", () => {
   // Prepares data
   const [prefix, def] = [
     "REACT_APP",
@@ -53,8 +53,10 @@ test("fails to use env with def no argument, should throw error", () => {
   // Prepares onPreBuild callback w/o def argument
   const t = () => preCallback(prefix);
 
-  // Checks if the error is correct
-  expect(t).toThrow();
+  // Checks if no error
+  expect(t).not.toThrow();
+  // Checks if void function
+  expect(t()).toBeUndefined();
 });
 
 test("fails to use env with bad def argument, should throw error", () => {
