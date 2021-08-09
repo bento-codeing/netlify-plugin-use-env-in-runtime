@@ -93,6 +93,9 @@ The plugin requires two inputs to work.
 
    ##### Example:
    ![screenshot-set-env-through-ui img](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/blob/main/assets/img/screenshot-set-env-through-ui.png)
+   
+   &nbsp;
+   > reminder: you can write the value of def input as an array of strings or directly by writing the relative variables with a comma or semicolon as a separator.
 
    &nbsp;
 2. You're using the plugin through your ***netlify.toml*** file
@@ -110,6 +113,7 @@ The plugin requires two inputs to work.
    # In our React app:  
    # console.log(process.env); // { ..., REACT_APP_VAR_1 = "something", REACT_APP_VAR_2 = "something else" }  
    ```  
+   &nbsp;
 
    > Important!  
    > 1. The input prefix if defined in the UI is overridden by the one defined in the netlify.toml file if it exists.
