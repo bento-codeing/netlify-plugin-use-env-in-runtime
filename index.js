@@ -21,7 +21,7 @@ module.exports = {
       const definitions = buildGlobalDefinitions(inputs.def);
       console.info("Built-in definitions: ", definitions);
 
-      console.group("Definition proces");
+      console.group("Definition process");
       // Set the process env object
       for (const definition of definitions) {
         // Use old concat to provide a support to old Node versions
