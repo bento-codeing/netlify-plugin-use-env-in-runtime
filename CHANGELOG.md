@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/compare/v1.2.1...v1.2.2) (2021-08-22)
+
+
+### Bug Fixes
+
+* **issue #1:** remove required properties ([056e3ed](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/commit/056e3ed6234dabe505ed6f0f79583e9e55eca5d4)), closes [#1](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues/1)
+* **issue #2:** remove top-level error handler ([020ea90](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/commit/020ea90f9fe74b3fe6fd66d2db80b10d4633dfa1)), closes [#2](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues/2)
+* **issue #3:** use netlifyConfig.build.environment instead of process.env ([6043e34](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/commit/6043e34102314a3bb4a9dcefd2795a13658d409b)), closes [#3](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues/3)
+* **issue #4:** small typo ([5fb60b2](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/commit/5fb60b2aae1a58dd60313f2dcce58953b6b8ad18)), closes [#4](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues/4)
+
 ### [1.2.3](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/compare/v1.2.2...v1.2.3) (2021-08-22)
 
 ### [1.2.2](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/compare/v1.2.1...v1.2.2) (2021-08-22)
