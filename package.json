@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-use-env-in-runtime",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Allows you to use env. vars of the Netlify TOML file in your code",
   "main": "index.js",
   "files": [
