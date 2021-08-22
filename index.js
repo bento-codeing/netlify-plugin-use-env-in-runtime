@@ -1,43 +1,38 @@
 module.exports = {
   onPreBuild: ({inputs, utils}) => {
-    try {
-      console.group("Starting the \"uefn\" plugin process");
-      const prefix = inputs.prefix || process.env.NETLIFY_PLUGIN_USE_ENV_IN_RUNTIME_PREFIX;
+    console.group("Starting the \"uefn\" plugin process");
+    const prefix = inputs.prefix || process.env.NETLIFY_PLUGIN_USE_ENV_IN_RUNTIME_PREFIX;
 
-      // Stop the process if there is no prefix input without breaking the build
-      if (!prefix) {
-        return console.warn("No \"prefix\" input defined. Skip the process.");
-      }
-
-      console.info(`Defined prefix: "${prefix}"`);
-
-      // Stop the process if there is no def input without breaking the build
-      const hasDef = inputs.def || process.env.NETLIFY_PLUGIN_USE_ENV_IN_RUNTIME_DEF;
-      if (!hasDef) {
-        return console.warn("No \"def\" input defined. Skip the process.");
-      }
-
-      // Build definitions
-      const definitions = buildGlobalDefinitions(inputs.def);
-      console.info("Built-in definitions: ", definitions);
-
-      console.group("Definition process");
-      // Set the process env object
-      for (const definition of definitions) {
-        // Use old concat to provide a support to old Node versions
-        const key        = `${prefix}_${definition}`;
-        process.env[key] = process.env[definition];
-        console.info(`- Set ${key} with the following value: "${definition}" in process.env`);
-      }
-      console.groupEnd();
-
-      console.info("Use Env In Runtime plugin process completed");
-      console.groupEnd();
-      console.info("The environment variables have been added successfully!");
+    // Stop the process if there is no prefix input without breaking the build
+    if (!prefix) {
+      return console.warn("No \"prefix\" input defined. Skip the process.");
     }
-    catch (error) {
-      utils.build.failPlugin("The plugin failed. Please check your configuration. Stack trace:", {error});
+
+    console.info(`Defined prefix: "${prefix}"`);
+
+    // Stop the process if there is no def input without breaking the build
+    const hasDef = inputs.def || process.env.NETLIFY_PLUGIN_USE_ENV_IN_RUNTIME_DEF;
+    if (!hasDef) {
+      return console.warn("No \"def\" input defined. Skip the process.");
     }
+
+    // Build definitions
+    const definitions = buildGlobalDefinitions(inputs.def);
+    console.info("Built-in definitions: ", definitions);
+
+    console.group("Definition process");
+    // Set the process env object
+    for (const definition of definitions) {
+      // Use old concat to provide a support to old Node versions
+      const key        = `${prefix}_${definition}`;
+      process.env[key] = process.env[definition];
+      console.info(`- Set ${key} with the following value: "${definition}" in process.env`);
+    }
+    console.groupEnd();
+
+    console.info("Use Env In Runtime plugin process completed");
+    console.groupEnd();
+    console.info("The environment variables have been added successfully!");
   }
 };
 
