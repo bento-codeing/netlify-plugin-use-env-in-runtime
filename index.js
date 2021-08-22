@@ -1,5 +1,5 @@
 module.exports = {
-  onPreBuild: ({inputs, utils}) => {
+  onPreBuild: ({inputs, netlifyConfig}) => {
     console.group("Starting the \"uefn\" plugin process");
     const prefix = inputs.prefix || process.env.NETLIFY_PLUGIN_USE_ENV_IN_RUNTIME_PREFIX;
 
@@ -24,9 +24,8 @@ module.exports = {
     // Set the process env object
     for (const definition of definitions) {
       // Use old concat to provide a support to old Node versions
-      const key        = `${prefix}_${definition}`;
-      process.env[key] = process.env[definition];
-      console.info(`- Set ${key} with the following value: "${definition}" in process.env`);
+      const key                            = `${prefix}_${definition}`;
+      netlifyConfig.build.environment[key] = process.env[definition];
     }
     console.groupEnd();
 
@@ -44,8 +43,10 @@ module.exports = {
  */
 function buildGlobalDefinitions(tomlDef) {
   console.group("Set global definitions (merge UI definitions with TOML definitions if exists)");
+
   // Get definitions sets in the Netlify UI
-  const uiDef         = parseUIDefinitions();
+  const uiDef = parseUIDefinitions();
+
   console.info("- Parse TOML definitions if exists");
   const parsedTomlDef = Array.isArray(tomlDef) ? tomlDef : splitDefinitions(tomlDef);
 
