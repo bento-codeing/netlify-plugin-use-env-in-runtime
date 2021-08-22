@@ -127,6 +127,7 @@ Once installed and configured, the plugin will automatically run in the Netlify 
 &nbsp;
 ## Changelog
 ###### A detailed changelog, intended for programmers
+- **1.2.2** - Fix some issues ([#1](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues/1), [#2](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues/2), [#3](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues/3), [#4](https://github.com/ARKHN3B/netlify-plugin-use-env-in-runtime/issues/4))
 - **1.2.1** - Remove yarn file
 - **1.2.0** - Add default inputs and add the possibility to configure the plugin through the ui
 - **1.1.0** - Add logs
