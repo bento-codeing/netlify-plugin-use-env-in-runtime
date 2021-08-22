@@ -1,5 +1,11 @@
 const {onPreBuild} = require("./../index");
 
+const netlifyConfig = {
+  build: {
+    environment: {},
+  },
+};
+
 const utils         = {
   run   : {
     command() {},
@@ -18,8 +24,11 @@ const utils         = {
   },
 };
 const addProcessEnv = (...envVars) => { envVars.forEach(envVar => process.env[envVar] = `Test for ${envVar}`); };
-const preCallback   = (prefix, def) => onPreBuild({inputs: {prefix, def}, utils});
+const preCallback   = (prefix, def) => onPreBuild({inputs: {prefix, def}, utils, netlifyConfig});
 
+beforeEach(() => {
+  netlifyConfig.build.environment = {};
+});
 
 test("normal configuration", () => {
   // Prepares data
@@ -36,7 +45,7 @@ test("normal configuration", () => {
 
   // Multi checks
   def.forEach(varName => (
-    expect(process.env).toHaveProperty(`${prefix}_${varName}`, process.env[varName])
+    expect(netlifyConfig.build.environment).toHaveProperty(`${prefix}_${varName}`, process.env[varName])
   ));
 });
 
