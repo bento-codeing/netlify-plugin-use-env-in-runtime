@@ -4,9 +4,7 @@ name: netlify-plugin-use-env-in-runtime
 inputs:
   - name: prefix
     description: "Some environments require a prefix before their variables to work. E.g. REACT_APP_ for CRA, GATSBY_ for Gatsby, etc."
-    required: true
     default: ""
   - name: def
     description: "A list defining the variables to be used."
-    required: true
     default: []
